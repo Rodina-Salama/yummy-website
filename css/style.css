@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  background-color: black;
+  
+}
+
+.top-20{
+  top:20%;
+}
+.start-18{
+  left:18%;
+}
+.layer{
+  background-color: rgba(255, 255, 255, 0.871);
+  top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ opacity: 0;
+ transition: 0.6s;
+
+ transform: translateY(30%);
+}
+
+.imgs:hover .layer{
+  opacity: 1;
+  transform: translateY(0);
+}
+.menu{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, black 155px, white 10px);
+  z-index: 99;
+}
+.emoji{
+  width:50px;
+}
+
+
+.menu-icon{
+position: absolute;
+top:50%;
+right:15%;
+}
+i{
+  cursor: pointer;
+}
+ li{
+  position: relative;
+  cursor: pointer;
+}
+.search .container .row input{
+  background-color: transparent;
+  /* outline-style: solid;
+  outline-color: red; */
+}
+ /* input::placeholder{
+  color: white;
+} */
+/* .form-control{
+  color: white;
+background-color: black;
+} */
+.contact{
+  min-height: 100vh;
+}
+
+.layer p{
+  max-height: 35px;
+}
+.imgs{
+  cursor: pointer;
+}
+.layer .text{
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .layer .text p{
+    text-align: end;
+    margin-left:50px ;
+  }
+}
+/* @media screen and (max-width: 600px) {
+ .details .container .texts h2{
+text-align: center;
+  }
+} */
+.texts ul li{
+  
+  display: inline-block;
+  outline: none;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 14px 24px;
+  border: none;
+
+
+
+}
+.texts .recipe  li{
+background-color:  #b6effb;
+}
+
+.texts .tag li{
+  background-color: #f8d7da;
+}
